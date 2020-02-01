@@ -1,0 +1,115 @@
+/*Bompa Remus 342C4 */
+
+1) Avantaje si dezavantaje + comparatii
+
+b - branching factor (4-6, numarul de actiuni posibile dintr un nod => in medie 5)
+
+*) Breadth First Search
+- complet (gaseste intotdeauna solutia daca aceasta exista)
+- nu este optimal (costul cailor nu este o functie nedescrescatoare cu adancimea nodului, in cazul
+actiunii de dropoff, desi adancimea creste costul poate scade)
+- numarul de noduri generate: O(b^(d+1)), unde d - adancimea celei mai apropiate solutii
+- numarul de noduri explorate (vizitate): O(b^d) (O(b^(d+1)) = O(b^d) (vizitate) + O(b^(d+1)) (pe frontiera))
+- complexitate temporala: O(b^d) (numarul de noduri vizitate, deoarece are loc o iter / nod vizitat)
+
+- prima varianta (cea neoptimizata) nu se termina in timp util pentru toate testele,
+din cauza existentei multor stari care se repeta si umplu coada OPEN (este vorba despre
+starile avand acelasi client, suma, capacitate ramasa si clienti ramasi de pe pozitii 
+diferite, care pot sa convearga la aceeasi pozitie consumand aceeasi cantitate)
+- in cazul variantei optimizate am modificat algoritmul de optimizare: nodul succesor se
+adauga in visited (este marcat ca vizitat) dupa ce se verifica ca acesta sa nu fie deja
+vizitat. In acest fel, nu vor exista noduri duplicate in OPEN iar numarul de noduri 
+duplicate (deci timpul de executie) scade.
+
+*) Uniform-cost search
+- spre deosebire de BFS, acest algoritm selecteaza din OPEN starea avand costul cel mai
+mic. Am definit costul ca fiind: capacitatea consumata de masina - suma acumulata pana acum
+- algoritmul nu este optimal deoarece exista pasi in care costul este negativ (actiunea de
+dropoff), ceea ce nu garanteaza ca odata selectat un nod din OPEN, calea gasita este cea
+optima (daca am capacitatea masinii de 5 l, in pozitia initiala sunt 2 clienti: unul merge
+in stanga la o distanta de 2 cu buget 20 iar celalalt in dreapta la o distanta de 3 
+cu buget 50, se va alege starea finala de 20, chiar daca optima ar fi fost cea de 50)
+- este complet deoarece daca solutia exista se va comporta ca un BFS pana cand ajunge la
+solutie (costul unui pas e acelasi: 1)
+- varianta neoptimizata nu se termina in timp util pentru toate testele, deoarece se poate
+ajunge la situatia in care noduri cu aceeasi stare sa aiba cel mai mic cost in OPEN iar
+prin explorarea lor se vor insera in OPEN alte stari duplicate
+- nu este cazul sa se verifice daca exista aceeasi stare cu un cost mai prost in OPEN si
+sa se inlocuiasca costul acesteia deoarece prin modul in care am definit starile si costul,
+o stare va avea intotdeauna acelasi cost
+
+*) Depth-first search
+- este selectat si expandat primul nod din stiva OPEN (cel mai adanc)
+- versiunea neoptimizata nu este completa (in cazul in care o stare se repeta in OPEN, 
+algoritmul va rula intr o bucla infinita). Versiunea optimizata este completa
+deoarece va ajunge sa expandeze fiecare nod (la fel ca BFS)
+- ambele versiuni sunt neoptimale (nu se tine cont de cost, ci de ordinea in care se
+expandeaza succesorii pentru a se ajunge la o stare finala)
+- complexitate temorala: O(b^m) unde m-adancimea maxima a spatiului starilor = capacitate
+(dupa modul in care am definit un goal)
+- complexitate spatiala: O(b * m)
+
+*) Depth-limited search
+- nodurile aflate la adancimea k sunt considerati fara succesori
+- daca k < d, unde d - adancimea solutiei celei mai apropiate (ca adancime), algoritmul 
+este incomplet (nu ajunge la solutie)
+- algoritmul este neoptimal
+- complexitate temporala: O(b^k)
+- complexitate spatiala: O(b * k)
+
+*) Iterative deepening search
+- creste adancimea limita pana gaseste o solutie
+- nu este optimal pentru aceasta solutie, deoarece costurile nodurilor pot fi descrescatoare
+(cazul dropoff) => nodul optim nu va fi cel mai apropiat
+- este complet (gaseste intotdeauna solutia cea mai la suprafata)
+- memoria ocupata: O(b * d)
+- complexitate: O(b^d)
+
+*) Greedy Best-first Search
+- incearca sa expandeze nodurile corespunzatoare starilor cele mai apropiate de solutie
+- am folosid doua euristici pentru Greed-Best-first si A-star:
+    *)h1 - drumul ramas pana la solutie este: capacitatea masinii + suma colectata pana
+    acum - bugetul tuturor clientilor ramasi (ca si cum taxiul ar transporta toti clientii
+    la destinatie cand i se termina benzina) daca mai are benzina si 0 daca nu mai are
+    benzina
+    *)h2 - calculeaza distanta pana la pozitia masini pana la client (daca exista un 
+    client) si de la masina la cel mai apropiat client si apoi la destinatie pentru
+    a obtine diferenta distanta - buget minima. Euristica este aceasta diferenta:
+    distanta - buget. Daca distanta este > capacitatea euristica va fi 0 (astfel incat
+    sa fie 0 intr o solutie)
+- algoritmul este greedy, de acea in unele situatii costul de cautare este minim (se poate
+sa se expandeze doar nodurile de pe calea de cautare)
+- algoritmul nu este optimal (nu gaseste intotdeauna solutia optima, depinde de cat de
+buna este euristica)
+- algoritmul este complet (Greedy best-first poate fi incomplet in varianta neoptimizata
+daca o stare parinte poate aparea ca succesor a uneia copil si are euristica cea mai buna, 
+dar in acest caz, dupa cum am definit o stare, o stare parinte nu poate fi
+succesorul uneia copi)
+- complexitate: O(b^m), unde m-adancimea maxima a spatiului starilor, poate fi redus
+cu o euristica buna
+
+*) A* search
+
+*) Recursive best-first search
+- apleaza recursiv functia RBFS care retine valoarea f-value (g + h) a caii alternative
+celei pe care s-a inaintat. Daca cea mai buna valoare f a succesorilor depaseste aceasta
+(limit) atunci algoritmul va incerca sa se intoarca la calea alternativa
+- imita best-first search, incercand sa inainteze la fiecare pas pe cel mai bun drum
+(valoarea f cea mai mica), retinand insa numai lista succesorilor pe fiecare nivel
+al caii => complexitate spatiala O(b * d) cu d-adancimea celei mai apropiate solutii
+(nu am inclus parents si visited)
+- la fel ca A* este optimal daca euristica h este admisibila
+- isi schimba des calea, ceea ce poate genera o scadere a complexitatii temporale
+din cauza reexpandarii unor noduri
+
+*) Learning Real-Time A*
+- spre deosebire de A-star care este o strategie de cautare offline, LRTA* este una online,
+putand expanda doar succesorii nodului pe care il ocupa prin cautare locala
+- construieste o tabela Rezultat, ce reprezinta o mapa stare,actiune -> stare si o
+tabela a celor mai bune estimari din care va alege cea mai buna mutare aparenta.
+Odata ajuns intr-o noua stare, actualizeaza estimarea parintelui. Actiunile ce nu
+au fost inca incercate se considera ca vor ajunge la solutie cu cel mai mic cost
+posibil (h(s))
+- nu este complet pentru spatii infinite
+- nu este complet in acest caz (nu se poate ajunge de la orice stare la o stare 
+finala, exista arce de cost negativ (dropoff), actiunile nu sunt reversibile)

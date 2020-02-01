@@ -1,0 +1,42 @@
+------------------------------
+1
+RecursiveBestFirstSearchH2
+0.000138998031616
+8
+5
+['pickup', 'west', 'east', 'south', 'south', 'dropoff', 'west']
+------------------------------
+2
+RecursiveBestFirstSearchH2
+0.000425100326538
+18
+15
+['west', 'pickup', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'east', 'east', 'south', 'dropoff']
+------------------------------
+3
+RecursiveBestFirstSearchH2
+0.000641822814941
+27
+20
+['west', 'pickup', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'east', 'east', 'south', 'dropoff', 'north', 'west', 'pickup', 'south', 'south', 'dropoff', 'west']
+------------------------------
+4
+RecursiveBestFirstSearchH2
+0.000380039215088
+23
+25
+['pickup', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'south', 'west', 'south', 'dropoff', 'west']
+------------------------------
+5
+RecursiveBestFirstSearchH2
+0.00043511390686
+28
+25
+['pickup', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'south', 'west', 'south', 'dropoff']
+------------------------------
+6
+RecursiveBestFirstSearchH2
+0.000771045684814
+29
+20
+['north', 'north', 'pickup', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'south', 'south', 'south', 'west', 'dropoff', 'west', 'west', 'north', 'north', 'pickup', 'east', 'north']

@@ -1,0 +1,42 @@
+------------------------------
+1
+LearningRealTimeAStarH2
+0.000796794891357
+50
+5
+['pickup', 'west', 'east', 'south', 'south', 'dropoff', 'west']
+------------------------------
+2
+LearningRealTimeAStarH2
+0.00118494033813
+71
+15
+['west', 'pickup', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'east', 'east', 'south', 'dropoff']
+------------------------------
+3
+LearningRealTimeAStarH2
+0.00162601470947
+104
+15
+['west', 'pickup', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'east', 'east', 'south', 'dropoff', 'pickup', 'east']
+------------------------------
+4
+LearningRealTimeAStarH2
+0.00128197669983
+88
+25
+['pickup', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'south', 'west', 'south', 'dropoff', 'west']
+------------------------------
+5
+LearningRealTimeAStarH2
+0.00112700462341
+91
+25
+['pickup', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'south', 'west', 'south', 'dropoff']
+------------------------------
+6
+LearningRealTimeAStarH2
+0.00158190727234
+106
+20
+['north', 'north', 'pickup', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'south', 'south', 'south', 'west', 'dropoff']

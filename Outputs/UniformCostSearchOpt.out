@@ -1,0 +1,42 @@
+------------------------------
+1
+UniformCostSearchOpt
+0.000338077545166
+55
+5
+['pickup', 'south', 'south', 'dropoff', 'north', 'south', 'north']
+------------------------------
+2
+UniformCostSearchOpt
+0.0075740814209
+624
+32
+['north', 'pickup', 'south', 'south', 'east', 'dropoff', 'north', 'pickup', 'south', 'south', 'dropoff', 'west', 'pickup', 'north', 'north', 'east', 'east', 'east', 'dropoff', 'south', 'south']
+------------------------------
+3
+UniformCostSearchOpt
+0.0111398696899
+808
+32
+['north', 'pickup', 'south', 'south', 'east', 'dropoff', 'north', 'pickup', 'south', 'south', 'dropoff', 'west', 'pickup', 'north', 'north', 'east', 'east', 'east', 'dropoff', 'south', 'south', 'north', 'south', 'north', 'south', 'north']
+------------------------------
+4
+UniformCostSearchOpt
+0.00869584083557
+739
+57
+['pickup', 'south', 'south', 'west', 'dropoff', 'north', 'pickup', 'east', 'north', 'dropoff', 'south', 'west', 'north', 'west', 'west', 'pickup', 'south', 'east', 'south', 'south', 'dropoff', 'south', 'south', 'north', 'south', 'north']
+------------------------------
+5
+UniformCostSearchOpt
+0.0128819942474
+831
+89
+['pickup', 'south', 'south', 'west', 'dropoff', 'north', 'pickup', 'east', 'north', 'dropoff', 'south', 'west', 'west', 'pickup', 'north', 'west', 'dropoff', 'pickup', 'south', 'east', 'south', 'south', 'dropoff', 'south', 'west', 'west', 'pickup', 'north', 'north', 'north', 'east', 'east', 'east', 'dropoff', 'south']
+------------------------------
+6
+UniformCostSearchOpt
+0.00834894180298
+698
+67
+['north', 'north', 'pickup', 'south', 'south', 'south', 'west', 'west', 'dropoff', 'north', 'north', 'west', 'west', 'pickup', 'east', 'north', 'dropoff', 'south', 'west', 'west', 'pickup', 'west', 'north', 'dropoff', 'pickup', 'south', 'south', 'south', 'east', 'dropoff', 'south', 'south', 'south']

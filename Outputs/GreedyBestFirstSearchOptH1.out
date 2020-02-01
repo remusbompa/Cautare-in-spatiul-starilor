@@ -1,0 +1,42 @@
+------------------------------
+1
+GreedyBestFirstSearchOptH1
+0.00123310089111
+144
+5
+['south', 'north', 'pickup', 'south', 'south', 'dropoff', 'north']
+------------------------------
+2
+GreedyBestFirstSearchOptH1
+0.145910978317
+4734
+5
+['south', 'south', 'north', 'south', 'north', 'south', 'north', 'south', 'north', 'south', 'north', 'north', 'east', 'pickup', 'south', 'south', 'dropoff']
+------------------------------
+3
+GreedyBestFirstSearchOptH1
+0.7806661129
+13226
+10
+['south', 'south', 'north', 'south', 'north', 'south', 'north', 'south', 'north', 'south', 'north', 'south', 'north', 'south', 'north', 'north', 'north', 'pickup', 'south', 'south', 'east', 'dropoff']
+------------------------------
+4
+GreedyBestFirstSearchOptH1
+0.345576047897
+8708
+7
+['south', 'south', 'south', 'south', 'south', 'north', 'south', 'north', 'south', 'north', 'south', 'north', 'south', 'north', 'north', 'north', 'north', 'west', 'pickup', 'east', 'north', 'dropoff']
+------------------------------
+5
+GreedyBestFirstSearchOptH1
+7.72131204605
+44216
+25
+['south', 'south', 'south', 'south', 'south', 'north', 'south', 'north', 'south', 'north', 'south', 'north', 'south', 'north', 'south', 'north', 'south', 'north', 'north', 'north', 'north', 'north', 'pickup', 'south', 'south', 'west', 'dropoff']
+------------------------------
+6
+GreedyBestFirstSearchOptH1
+2.3051970005
+21390
+20
+['south', 'south', 'south', 'south', 'south', 'south', 'north', 'south', 'north', 'south', 'north', 'south', 'north', 'north', 'north', 'north', 'north', 'north', 'north', 'north', 'pickup', 'south', 'south', 'south', 'west', 'west', 'dropoff']

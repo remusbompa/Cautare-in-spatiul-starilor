@@ -1,0 +1,42 @@
+------------------------------
+1
+AStarSearchOptH1
+0.000484943389893
+55
+5
+['pickup', 'south', 'south', 'dropoff', 'north', 'south', 'north']
+------------------------------
+2
+AStarSearchOptH1
+0.0208399295807
+624
+32
+['north', 'pickup', 'south', 'south', 'east', 'dropoff', 'north', 'pickup', 'south', 'south', 'dropoff', 'west', 'pickup', 'north', 'north', 'east', 'east', 'east', 'dropoff', 'south', 'south']
+------------------------------
+3
+AStarSearchOptH1
+0.0309360027313
+808
+32
+['north', 'pickup', 'south', 'south', 'east', 'dropoff', 'north', 'pickup', 'south', 'south', 'dropoff', 'west', 'pickup', 'north', 'north', 'east', 'east', 'east', 'dropoff', 'south', 'south', 'north', 'south', 'north', 'south', 'north']
+------------------------------
+4
+AStarSearchOptH1
+0.0228450298309
+728
+57
+['pickup', 'south', 'south', 'west', 'dropoff', 'north', 'pickup', 'east', 'north', 'dropoff', 'south', 'west', 'north', 'west', 'west', 'pickup', 'south', 'east', 'south', 'south', 'dropoff', 'south', 'south', 'north', 'south', 'north']
+------------------------------
+5
+AStarSearchOptH1
+0.0327441692352
+831
+89
+['pickup', 'south', 'south', 'west', 'dropoff', 'north', 'pickup', 'east', 'north', 'dropoff', 'south', 'west', 'west', 'pickup', 'north', 'west', 'dropoff', 'pickup', 'south', 'east', 'south', 'south', 'dropoff', 'south', 'west', 'west', 'pickup', 'north', 'north', 'north', 'east', 'east', 'east', 'dropoff', 'south']
+------------------------------
+6
+AStarSearchOptH1
+0.0212078094482
+698
+67
+['north', 'north', 'pickup', 'south', 'south', 'south', 'west', 'west', 'dropoff', 'north', 'north', 'west', 'west', 'pickup', 'east', 'north', 'dropoff', 'south', 'west', 'west', 'pickup', 'west', 'north', 'dropoff', 'pickup', 'south', 'south', 'south', 'east', 'dropoff', 'south', 'south', 'south']

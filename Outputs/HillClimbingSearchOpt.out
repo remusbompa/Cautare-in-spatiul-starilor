@@ -1,0 +1,42 @@
+------------------------------
+1
+HillClimbingSearchOpt
+9.29832458496e-05
+18
+8
+['pickup', 'south', 'south', 'dropoff']
+------------------------------
+2
+HillClimbingSearchOpt
+0.000225067138672
+10
+14
+['north']
+------------------------------
+3
+HillClimbingSearchOpt
+0.000262975692749
+10
+19
+['north']
+------------------------------
+4
+HillClimbingSearchOpt
+0.000262022018433
+29
+41
+['pickup', 'south', 'south', 'west', 'dropoff', 'north']
+------------------------------
+5
+HillClimbingSearchOpt
+0.00047492980957
+34
+45
+['pickup', 'south', 'south', 'west', 'dropoff', 'north', 'west']
+------------------------------
+6
+HillClimbingSearchOpt
+0.000128030776978
+5
+24
+['north']

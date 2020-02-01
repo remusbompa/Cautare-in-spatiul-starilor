@@ -1,0 +1,42 @@
+------------------------------
+1
+DepthLimitedSearchOpt
+0.000218868255615
+47
+5
+['pickup', 'west', 'east', 'south', 'south', 'dropoff', 'west']
+------------------------------
+2
+DepthLimitedSearchOpt
+0.000236988067627
+68
+15
+['west', 'pickup', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'east', 'east', 'south', 'dropoff']
+------------------------------
+3
+DepthLimitedSearchOpt
+0.000362873077393
+101
+15
+['west', 'pickup', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'east', 'east', 'south', 'dropoff', 'pickup', 'east']
+------------------------------
+4
+DepthLimitedSearchOpt
+0.00030517578125
+85
+25
+['pickup', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'south', 'west', 'south', 'dropoff', 'west']
+------------------------------
+5
+DepthLimitedSearchOpt
+0.000414133071899
+88
+25
+['pickup', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'south', 'west', 'south', 'dropoff']
+------------------------------
+6
+DepthLimitedSearchOpt
+0.000361919403076
+103
+20
+['north', 'north', 'pickup', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'east', 'west', 'south', 'south', 'south', 'west', 'dropoff']
